@@ -5,6 +5,9 @@ html {
     justify-content: center;
     margin: 0 auto;
 }
+body, html {
+    overflow: hidden;
+}
 
 nav {
     height: 69px;
@@ -64,8 +67,6 @@ nav .nav-content {
     right: 10px;
     border: 1px solid seashell;
     border-radius: 10px 0 0 10px;
-    
-    
 }
 
 .dropdown-content:hover {
