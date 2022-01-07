@@ -250,8 +250,8 @@ footer p {
         visibility: visible;
         display:block;
     }
-    .image-slider-wrapper {
-        display:none;
+    .locContainer .box {
+        margin-bottom: 5px;
     }
 }
 
