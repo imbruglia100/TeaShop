@@ -1,0 +1,253 @@
+html {
+    font-family: helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav {
+    height: 69px;
+    width:auto;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+
+nav .nav-content {
+    text-decoration: underline;
+    padding-right: .5em;
+}
+
+.dropdown {
+    height:25px;
+    width: 25px;
+    position: relative;
+    visibility: hidden;
+    background-image: url('/burger-bar.png');
+    background-position: center;
+    background-size: contain;
+    float: right;
+    margin: 10px;
+    align-content: center;
+    
+}
+
+.dropdown button:focus + .dropdown-content{
+    display:flex;
+    visibility: visible;
+}
+
+.dropdown button {
+    height:25px;
+    width:25px;
+    border: 0 solid red;
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.dropdown .dropdown-content {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: fit-content;
+    width: 150px;
+    flex-direction:column;
+    top: 23px;
+    right: 10px;
+    border: 1px solid seashell;
+    border-radius: 10px 0 0 10px;
+    
+    
+}
+
+.dropdown-content:hover {
+    display: flex;
+    visibility: visible;
+}
+
+.dropdown-content a {
+    padding: 8px;
+    text-align: right;
+    text-decoration: none;
+    color: seashell;
+}
+
+.dropdown-content a:hover {
+    color: rgb(141, 135, 130);
+}
+.dropdown-content a:active {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+
+
+ .logo {
+    margin-right: auto;
+    height:50px;
+    padding-left: 10px;
+}
+
+.container {
+   height: 700px;
+   background-color: black;
+   display: flex;
+   background-image: url('/img-mission-background.webp');
+   background-size: stretch;
+   background-position: center;
+   overflow:hidden;
+}
+
+.missionban {
+  background-color: black;
+  color: seashell;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: relative;
+  align-items: center;
+  width: 80%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 5px;
+  border-radius: 10px;
+  opacity: .9;
+}
+.missionban h2 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.missionban h4 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+
+.picContainer {
+    display: flex;
+    max-width: 1000px;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    position: relative;
+}
+
+main h1, main h3 {
+    color: white;
+    text-align: center;
+}
+
+.picture{
+    display: table;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px;
+}
+
+.picture img{
+    width: 300px;
+    border-radius: 5px;
+}
+figcaption {
+    color:white;
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+}
+
+.locations {
+    min-height: 500px;
+    flex-basis:auto;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('/img-locations-background.webp');
+    background-size: stretch;
+    background-repeat: no-repeat;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locContainer {
+    display: flex;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 1 row;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: black ;
+    margin: 0 10px;
+    margin-bottom: 10px;;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid seashell;
+    border-radius: 5px;
+}
+
+.box p {
+    color:white;
+}
+
+.locations .title {
+    height: fit-content;
+    width: fit-content;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+
+footer section {
+    height: 200px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+}
+
+footer section h1, footer section h5{
+    text-align: center;
+}
+
+footer p {
+    color: gray;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 543px){
+    nav .nav-content {
+        visibility: hidden;
+        display: none;
+    }
+    nav .dropdown, nav .menuIcon {
+        visibility: visible;
+        display:block;
+    }
+}
+
