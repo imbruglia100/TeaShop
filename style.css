@@ -100,7 +100,7 @@ nav .nav-content {
    height: 700px;
    background-color: black;
    display: flex;
-   background-image: url('/img-mission-background.webp');
+   background-image: url('https://imbruglia100.github.io/teaShop/img-mission-background.webp');
    background-size: stretch;
    background-position: center;
    overflow:hidden;
@@ -175,7 +175,7 @@ figcaption {
     flex-basis:auto;
     width: 100%;
     margin: 0 auto;
-    background-image: url('/img-locations-background.webp');
+    background-image: url('https://imbruglia100.github.io/teaShop/img-locations-background.webp');
     background-size: stretch;
     background-repeat: no-repeat;
     background-position:center;
